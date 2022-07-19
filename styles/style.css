@@ -28,6 +28,7 @@ body {
 .header-text {
     width: 50%;
     padding: 25px;
+    padding-bottom: 40px;
 
 }
 
@@ -66,7 +67,7 @@ body {
 
 .header-img img {
     width: 110%;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
     margin-top: 30px;
 }
 
@@ -159,7 +160,6 @@ body {
 
 /* ---------------------------------------footer-----------------------------  */
 footer {
-    /* height: 444px; */
     background-color: #161616;
     padding-left: 140px;
     padding-right: 140px;
@@ -202,4 +202,131 @@ hr {
 .footer-icon a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+/* ======================================Media Query=================================== */
+
+
+/* ---------------------------------------mobile-----------------------------------------  */
+@media only screen and (max-width:576px) {
+
+    .overall-section {
+        margin: 20px;
+    }
+
+    .header-detail {
+        flex-direction: column;
+        text-align: justify;
+
+    }
+
+    .header-text {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .header-text p {
+        width: 200px;
+        height: 16px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    .header-title {
+        font-size: 22px;
+    }
+
+
+    .header-img {
+        width: 100%;
+
+    }
+
+    .header-img img {
+        width: 120%;
+    }
+
+    .bolg-section {
+        flex-direction: column;
+    }
+
+    .options {
+        width: 90%;
+        background-color: white;
+        margin-top: -100px;
+
+    }
+
+    .option a {
+        border: 1px solid #E8E8E8;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-deatil {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .footer-deatil p {
+        padding: 10px;
+    }
+}
+
+/* -------------------------------Tablet-------------------------------------- */
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .overall-section {
+        margin: 50px;
+    }
+
+    .header-title {
+        font-size: 27px;
+    }
+
+    .header-text p {
+        width: 200px;
+        height: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+
+    .bolg-section {
+        flex-direction: column;
+    }
+
+
+    .options {
+        background-color: white;
+        margin: 20px auto;
+        margin-top: -70px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .option a {
+        border: 1px solid #E8E8E8;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-deatil {
+        flex-wrap: wrap;
+        line-height: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
