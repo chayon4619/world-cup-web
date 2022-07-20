@@ -102,13 +102,13 @@ body {
 }
 
 #all-group {
-    padding: 15px 64px;
-}
-
-#blog-btn {
     background-color: #DD0000;
     color: #FFFFFF;
-    padding: 15px 84px;
+    padding: 15px 60px;
+}
+
+#blog {
+    padding: 15px 80px;
 }
 
 /* ---------------------------------blogs---------------------------------- */
@@ -130,50 +130,30 @@ body {
 .blog {
     border: 1px solid #E8E8E8;
     border-radius: 10px;
+    padding: 20px;
+}
+
+.blog-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+
 }
 
 .blog-image img {
-    width: 100%;
+    width: 50%;
+    margin: 10px;
 }
 
-.blog-info {
-    padding: 10px;
-}
-
-.blog-info p {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.transfer-button {
-    text-decoration: none;
+.blog .group {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
     color: #161616;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 4px 16px;
-    border: 1px solid #161616;
-    border-radius: 5px;
-    transition: .3s;
 }
 
-.transfer-button:hover {
-    opacity: .5;
-}
 
-.blog-icon {
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    gap: 40px;
-    margin-top: 10px;
-}
-
-.view-btn {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    display: none;
-}
 
 /* ---------------------------------------footer-----------------------------  */
 footer {
@@ -280,6 +260,7 @@ hr {
 
     .blogs {
         grid-template-columns: repeat(1, 1fr);
+        margin: auto;
     }
 
     .footer-deatil {
@@ -338,17 +319,6 @@ hr {
 
     .blogs {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    #last-blog {
-        display: none;
-    }
-
-    .view-btn {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-
     }
 
     .footer-deatil {
